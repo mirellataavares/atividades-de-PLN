@@ -1,18 +1,17 @@
 import streamlit as st
 import string
 
-# Configuração da página
+
 st.set_page_config(
     page_title="Atividades de PLN",
     page_icon="🤖"
 )
 
-# Título
+
 st.title("🤖 Atividades de Processamento de Linguagem Natural")
 st.write("Aplicações básicas de PLN utilizando Python e Streamlit")
 
 
-# Menu lateral
 atividade = st.sidebar.selectbox(
     "Escolha uma atividade:",
     [
@@ -30,14 +29,13 @@ atividade = st.sidebar.selectbox(
 )
 
 
-# Entrada do usuário
+
 texto = st.text_area(
     "Digite um texto para análise:",
     height=150
 )
 
 
-# Botão
 executar = st.button("Executar análise")
 
 
